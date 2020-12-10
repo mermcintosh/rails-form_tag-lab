@@ -1,5 +1,11 @@
+<h1> Hello </h1>
+
 <div>
   <% @students.each do |student| %>
     <div><%= link_to student.to_s, student_path(student) %></div>
   <% end %>
 </div>
+
+<br/>
+
+<%= link_to "New Student Form", students_new_path%>
